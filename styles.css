@@ -1,0 +1,140 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    object-fit: fill;
+    z-index: 1;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 10%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.logout {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;;
+}
+
+.logout img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.navigation ul li {
+    padding: 1.5vh;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    outline: 0.5px solid gray; 
+}
+
+.navigation ul li a {
+    align-items: center;
+    color: lightgray;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.navigation ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card {
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 50%; 
+    height: auto;
+}
+
+.ntt {
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.ntt button {
+    background-color: transparent;
+    color: lightgrey;
+    border: none;
+    padding: 1vh;
+    width: 50%;
+    border-radius: 5px;
+    outline: 0.5px solid gray;
+    font-size: 13px;
+}
+
+.header-left {
+    position: absolute;
+    top: 3vh; 
+    left: 7vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.logo {
+    width: 42vh; 
+    min-width: 200px;
+    height: auto;
+}
+
+.back-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5vh 4vh;
+    margin-top: 30px;
+    border-radius: 5px;
+    outline: 0.5px solid white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 20px;
+    height: auto;
+}
